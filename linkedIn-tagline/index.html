@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Tagline Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="">
+  <h3>Create Unlimited Examples of Effective LinkedIn Headlines Instantly</h3>
+  <p>Your LinkedIn headline is the first thing people notice when they visit your profile. 
+    Not only does it stretch across the top of your profile page, it also introduces you on newsfeed posts, 
+    the “People You May Know” section, and LinkedIn job applications. Whether it’s being viewed by your business contacts or a recruiter, 
+    your LinkedIn headline is key to making a positive impression. It’s also one of the most important fields for LinkedIn’s search algorithm. 
+    Not only should your LinkedIn headline portray you as a credible member of your industry, it should also contain strategic keywords that 
+    help you appear higher in LinkedIn searches.
+    <br>
+    <hr>
+    Creating a powerful LinkedIn Headline can be as easy as 1-2-3-4 with our LinkedIn Tagline Generator.
+  </p>
+</div>
+
+  
+  <div class="progress1" id="fixedBar">
+    <ul>
+      <li>
+        <i class="fas fa-chevron-circle-right fa-2x" id="check1"></i>
+        <p> <strong>Step 1</strong> </p>
+      </li>
+      <li>
+        <i class="fas fa-chevron-circle-right fa-2x" id="check2"></i>
+        <p> <strong>Step 2</strong></p>
+      </li>
+      <li>
+        <i class="fas fa-chevron-circle-right fa-2x" id="check3"></i>
+        <p> <strong>Step 3</strong> </p>
+      </li>
+      <li>
+        <i class="fas fa-chevron-circle-right fa-2x" id="check4"></i>
+        <p> <strong>Step 4</strong></p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+      <h3> <span class="stepHighlight">Step 1</span> Start with an adjective</h3> 
+      <p>Start with an adjective that describes you best. Suggested length: 10-20 characters. <br>
+      </p>
+
+      <div class="tooltip-ex">
+        <span> <u>Show Me Examples</u></span>
+        <span class="tooltip-ex-text tooltip-ex-right">Accomplished, influential, dynamic, innovative, certified, award-winning, experienced, top-performing</span>
+      </div>
+
+
+      <div class="steps">
+        <form id="adjForm">
+          <input type="text" id="adjective" onkeyup="countCharsAdj(this)" placeholder="adjective that describes you professionally">
+          <p id="charNumAdj"> 0 characters</p>
+          <button>Save input</button>
+        </form>
+      </div>
+  </div>
+
+  <div class="container">
+    <h3> <span class="stepHighlight">Step 2 </span>Add your target job title</h3> 
+    <p>Add your target role or functional area. Suggested length: 20-25 characters. <br>
+    </p>
+
+    <div class="tooltip-ex">
+      <span> <u>Show Me Examples</u></span>
+      <span class="tooltip-ex-text tooltip-ex-right">Marketing Professional, Educator, Cybersecurity Expert, Corporate Executive, Business Consultant </span>
+    </div>
+
+    <div class="steps">
+      <form id="roleForm">
+        <input type="text" id="role" onkeyup="countCharsRole(this)" placeholder="job title, industry or functional area">
+        <p id="charNumRole">0 characters</p>
+        <button>Save input</button>
+      </form>
+    </div>  
+  </div>
+
+  <div class="container">
+      <h3> <span class="stepHighlight">Step 3</span> What is your reputation? What are you known for?</h3> 
+      <p>Enter a short phrase describing the types of problems you are good at solving within your 
+        area of expertise. Suggested length: 30-40 characters. <br>
+      </p>
+
+      <div class="tooltip-ex">
+        <span> <u>Show Me Examples</u></span>
+        <span class="tooltip-ex-text tooltip-ex-right">known for..., committed to..., with expertise in..., with proven ability to..., significant contributor to... </span>
+      </div>
+      
+      <div class="steps">
+        <form id="reputationForm">
+          <input type="text" id="reputation" onkeyup="countCharsRep(this)" placeholder="things you are good at, areas of expertise">
+          <p id="charNumRep">0 characters</p>
+          <button>Save input</button>
+        </form>
+      </div>
+  </div>
+
+  <div class="container">
+    <h3> <span class="stepHighlight">Step 4</span> Add your hobbies</h3> 
+    <p>Finish with your hobby or favorite extracurricular activities. Are you a foodie? A marathon runner? 
+      Or perhaps, a yoga addict or a world traveler? Connect with your LinkedIn audience on a personal level 
+      by adding one or two hobbies or a favorite pastime. Suggested length: 20-30 characters. <br>
+    </p>
+
+    <div class="tooltip-ex">
+      <span> <u>Show Me Examples</u></span>
+      <span class="tooltip-ex-text tooltip-ex-right">with interests in..., and passion for... </span>
+    </div>
+    
+    <div class="steps">
+      <form id="hobbyForm" >
+        <input type="text" id="hobby" onkeyup="countCharsHobby(this)" placeholder="hobbies, interests or extracurricular activities">
+        <p id="charNumHobby">0 characters</p>
+        <button>Save input</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="taglineContainer">
+    <h3><i class="fas fa-check-circle"></i> My LinkedIn Tagline</h3>
+    <p id="myTagline"> </p>
+    <div id="countContainer">
+      <div>
+        <p id="totalCount"></p>
+      </div>
+      <button type="button" onclick="getTotalCount()">Character Count</button>
+    </div>
+  </div>
+
+
+  <div id="lastStep">
+    <a href="https://www.linkedin.com/" target="_blank"><button>Update LinkedIn</button></a>
+    <button type="button" onclick="window.location.reload()">Start Over</button>
+  </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

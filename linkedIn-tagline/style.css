@@ -1,0 +1,191 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px
+    linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+}
+
+.header img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.header p {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container i {
+    color: rgb(119, 119, 119);
+}
+
+.stepHighlight {
+    color: rgb(230, 57, 70);
+}
+
+input {
+    border: none;
+    height: 40px;
+    margin: 8px 0;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    padding: 8px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.container button {
+    border: none;
+    background-color: rgb(69, 123, 157);
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 80%;
+    height: auto;
+    background-color: rgb(235, 237, 243);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px rgb(160, 160, 160);
+}
+
+#taglineContainer {
+    background-color: rgb(235, 237, 243);
+    height: auto;
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgb(160, 160, 160);
+}
+
+#countContainer button {
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(69, 123, 157);
+    color: white;
+    outline: none;
+}
+
+#myTagline {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#lastStep {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#lastStep button {
+    border-color: rgb(69, 123, 157);
+    background-color: white;
+    height: 50px;
+    width: 170px;
+    margin: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Container for tooltip */
+.tooltip-ex { 
+    position: relative; 
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 20px;
+   }
+
+.tooltip-ex-right {
+    top: -25px;
+    left: 110%;
+}
+
+/* This is for the tooltip text */
+.tooltip-ex .tooltip-ex-text { 
+    visibility: hidden;
+    width: 450px;
+    color: rgb(9, 9, 9);
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+   }
+
+/* Makes tooltip text visible when text is hovered on */
+.tooltip-ex:hover .tooltip-ex-text { 
+    visibility: visible;
+   }
+
+
+.progress1 {
+    background-color: rgb(235, 237, 243);
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.progress1 i {
+    padding-top: 10px; 
+    color: rgb(119, 119, 119);  
+    margin: 0 auto;  
+}
+
+.progress1 ul li {
+    display: inline-block;
+    width: 170px;
+    vertical-align: middle;
+}
+
+.progress1 p {
+    margin: 3px auto;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+    padding-top: 102px;
+  }
+
+  
